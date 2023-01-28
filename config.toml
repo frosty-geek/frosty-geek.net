@@ -78,7 +78,7 @@ disableHugoGeneratorInject = false
   homeSubtitle = "open source enthusiast | technology geek | gamer | dad of 3 ♡"
 
   # Set a background for the homepage
-  # backgroundImage = "assets/images/background.jpg"
+  #backgroundImage = "background.jpg"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
@@ -167,7 +167,7 @@ disableHugoGeneratorInject = false
   # Uncomment this if you want a portrait on your start page
   #
   [params.portrait]
-    path     = "/img/frosty-geek.webp"
+    path     = "/frosty-geek.webp"
     alt      = "Portrait"
     maxWidth = "256px"
 
