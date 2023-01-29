@@ -1,6 +1,6 @@
 ---
 title: about me
-date: 2023-01-28
+date: 2023-01-28T01:37:37+01:00
 cover: images/about-me-banner.jpg
 ---
 

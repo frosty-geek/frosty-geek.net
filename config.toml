@@ -1,4 +1,4 @@
-baseURL = "https://frosty-geek.github.io"
+baseURL = "https://frosty-geek.net"
 title   = "Ralf Heiringhoff"
 languageCode = "en-us"
 theme = "hello-friend-ng"
@@ -167,7 +167,7 @@ disableHugoGeneratorInject = false
   # Uncomment this if you want a portrait on your start page
   #
   [params.portrait]
-    path     = "/frosty-geek.webp"
+    path     = "/images/frosty-geek.webp"
     alt      = "Portrait"
     maxWidth = "256px"
 
@@ -178,7 +178,7 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
     name = "gpg"
-    url  = "0xE4953590D8AB7CD0AB56855F6A9C16FC02AF2BAA"
+    url  = "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x6a9c16fc02af2baa"
 
   [[params.social]]
     name = "matrix"
@@ -221,11 +221,11 @@ disableHugoGeneratorInject = false
   [[menu.main]]
     identifier = "about-me"
     name       = "about me"
-    url        = "about-me.html"
+    url        = "about-me/"
   [[menu.main]]
     identifier = "imprint"
     name       = "imprint"
-    url        = "imprint.html"
+    url        = "imprint/"
   [[menu.main]]
     identifier = "posts"
     name       = "posts"
