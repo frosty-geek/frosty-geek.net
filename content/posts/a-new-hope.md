@@ -3,7 +3,7 @@ title: "A New Hope"
 date: 2023-01-28T05:20:44+01:00
 draft: false
 toc: false
-images:
+cover: a-new-hope.webp
 tags:
 ---
 

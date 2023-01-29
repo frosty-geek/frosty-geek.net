@@ -221,12 +221,12 @@ disableHugoGeneratorInject = false
   [[menu.main]]
     identifier = "about-me"
     name       = "about me"
-    url        = "about-me/"
+    url        = "about-me.html"
+  [[menu.main]]
+    identifier = "imprint"
+    name       = "imprint"
+    url        = "imprint.html"
   [[menu.main]]
     identifier = "posts"
     name       = "posts"
     url        = "posts/"
-  [[menu.main]]
-    identifier = "imprint"
-    name       = "imprint"
-    url        = "imprint/"

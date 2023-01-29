@@ -1,8 +1,8 @@
-+++
-title = "about me"
-date = "2023-01-28"
-cover = "about-me-banner.jpg"
-+++
+---
+title: about me
+date: 2023-01-28
+cover: images/about-me-banner.jpg
+---
 
 
 Hi :wave:, I'm Ralf!
