@@ -18,7 +18,7 @@ the age of *42* :older_man:, but I'm still not sure if it's the answer to _the U
 of Life, The Universe, and Everything_ (as per the Hitchhiker's Guide to the Galaxy) but I'll
 continue my search for it.
 
-I've been working for [PlusServer GmbH](https://plusserver.com/) :briefcase: on and off for
+I've been working for [plusserver gmbh](https://plusserver.com/) :briefcase: on and off for
 2 decades now, currently being part of the team building the 100% open-source cloud called
 [pluscloud open](https://www.plusserver.com/en/products/pluscloud-open) :rocket:. Recently,
 I had the pleasure of co-authoring the [Open Operations Manifesto](https://openoperations.org/)
