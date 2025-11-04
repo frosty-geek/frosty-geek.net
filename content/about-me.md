@@ -19,12 +19,10 @@ the front line of building sovereign clouds, I remain deeply engaged with the Eu
 cloud ecosystem - these days, contributing more quietly from behind the scenes.
 
 Before joining SAP, I spent many years at [plusserver gmbh](https://plusserver.com/), where I had
-the privilege of helping to build the [pluscloud open](https://www.plusserver.com/en/products/pluscloud-open)
-- a 100% open-source cloud — from the ground up. 
-
-As part of this work, I contributed to the [Open Operations Manifesto](https://openoperations.org/)  
+the privilege of helping to build the [pluscloud open](https://www.plusserver.com/en/products/pluscloud-open) -
+a 100% open-source cloud - from the ground up. As part of this work, I contributed to the [Open Operations Manifesto](https://openoperations.org/)
 and worked closely with the [Sovereign Cloud Stack](https://sovereigncloudstack.org/) community :rocket:.
 
 Nowadays, in my spare time, I am mostly a dad of three :angel:. And let's just say, I've surpassed
-the age of *42* :older_man:, but I'm still not sure if it's the answer to *the Ultimate Question of Life,  
+the age of *42* :older_man:, but I'm still not sure if it's the answer to *the Ultimate Question of Life,
 the Universe, and Everything* (as per the Hitchhiker's Guide to the Galaxy) - but I’ll keep searching for it.
