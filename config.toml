@@ -40,15 +40,13 @@ disableHugoGeneratorInject = false
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
-[author]
-  name = "Ralf Heiringhoff"
-
 [blackfriday]
   hrefTargetBlank = true
 
 [taxonomies]
   tag      = "tags"
   category = "categories"
+  series   = "series"
 
 [privacy]
   [privacy.disqus]
@@ -63,6 +61,9 @@ disableHugoGeneratorInject = false
     disable = true
   [privacy.youtube]
     disable = true
+
+[params.author]
+  name = "Ralf Heiringhoff"
 
 [params]
   dateform        = "Jan 2, 2006"
