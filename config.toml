@@ -193,12 +193,8 @@ disableHugoGeneratorInject = false
     url  = "https://www.linkedin.com/in/ralf-heiringhoff"
 
   [[params.social]]
-    name = "xing"
-    url  = "https://www.xing.com/profile/Ralf_Heiringhoff"
-
-  [[params.social]]
     name = "case"
-    url  = "https://plusserver.com"
+    url  = "https://sap.com"
 
   [[params.social]]
     name = "github"
