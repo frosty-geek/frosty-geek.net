@@ -55,7 +55,7 @@ disableHugoGeneratorInject = false
     disable = true
   [privacy.instagram]
     disable = true
-  [privacy.twitter]
+  [privacy.x]
     disable = true
   [privacy.vimeo]
     disable = true
@@ -86,7 +86,7 @@ disableHugoGeneratorInject = false
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   #
-  gitUrl = "https://github.com/frosty-geek/frosty-geek.github.io/commits/"
+  gitUrl = "https://github.com/frosty-geek/frosty-geek.net/commits/"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   #
@@ -128,7 +128,7 @@ disableHugoGeneratorInject = false
   # If you want, you can easily override the default footer with your own content. 
   #
   [params.footer]
-    trademark = true
+    trademark = "2026"
     author = true
     topText = [
       "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
