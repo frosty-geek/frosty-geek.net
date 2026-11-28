@@ -81,7 +81,7 @@ jobs:
     needs: build
     steps:
       - name: Download prod artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: prod-site
           path: ./public-prod
