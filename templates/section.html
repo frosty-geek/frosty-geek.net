@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="posts">
+  <h1>{{ section.title }}</h1>
+
+  {%- if section.content %}
+  <div class="content">{{ section.content | safe }}</div>
+  {%- endif %}
+
+  {%- set_global current_year = "" %}
+  {%- for page in section.pages %}
+    {%- set post_year = page.date | date(format="%Y") %}
+    {%- if post_year != current_year %}
+      {%- if current_year != "" %}
+        </ul>
+      </div>
+      {%- endif %}
+      {%- set_global current_year = post_year %}
+      <div class="posts-group">
+        <div class="post-year">{{ post_year }}</div>
+        <ul class="posts-list">
+    {%- endif %}
+          <li class="post-item">
+            <a href="{{ page.permalink }}" class="post-item-inner">
+              <span class="post-title">{{ page.title }}</span>
+              <span class="post-day">{{ page.date | date(format="%b %e") }}</span>
+            </a>
+          </li>
+  {%- endfor %}
+  {%- if current_year != "" %}
+        </ul>
+      </div>
+  {%- endif %}
+</main>
+{% endblock content %}
