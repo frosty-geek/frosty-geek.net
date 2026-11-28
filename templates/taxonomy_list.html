@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main class="posts">
+  <h1>{{ taxonomy.name | capitalize }}</h1>
+  <ul class="posts-list">
+    {%- for term in terms %}
+    <li class="post-item">
+      <a href="{{ term.permalink }}" class="post-item-inner">
+        <span class="post-title">#{{ term.name }}</span>
+        <span class="post-day">{{ term.pages | length }}</span>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+</main>
+{% endblock content %}

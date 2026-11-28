@@ -1,220 +1,45 @@
-baseURL = "https://frosty-geek.net"
-title   = "Ralf Heiringhoff"
-languageCode = "en-us"
-theme = "hello-friend-ng"
+base_url = "https://frosty-geek.net"
+title = "Ralf Heiringhoff"
+description = "Ralf Heiringhoff's Homepage"
+default_language = "en"
+compile_sass = true
+minify_html = true
+generate_feeds = true
+feed_filenames = ["rss.xml", "atom.xml"]
 
-#PygmentsCodeFences = true
-#PygmentsStyle = "monokai"
+taxonomies = [
+  { name = "tags", feed = true },
+]
 
-#paginate  = 10
-#rssLimit  = 10  # Maximum number of items in the RSS feed.
-#copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+[markdown]
+render_emoji = true
+external_links_target_blank = true
 
-# googleAnalytics = ""
-# disqusShortname = ""
+[extra]
+author = "Ralf Heiringhoff"
+subtitle = "open source enthusiast | technology geek | gamer | dad of 3 ♡"
+keywords = "frosty-geek, Ralf Heiringhoff, homepage, blog"
+copyright_year = "2026"
+logo_mark = "$"
+logo_text = "cd ~"
+logo_cursor_color = "#67a2c9"
+portrait_path = "images/frosty-geek.webp"
+portrait_alt = "Portrait"
+portrait_max_width = "256px"
+git_commits_url = "https://github.com/frosty-geek/frosty-geek.net/commits/zola"
 
-#archetypeDir = "archetypes"
-#contentDir   = "content"
-#dataDir      = "data"
-#layoutDir    = "layouts"
-#publishDir   = "public"
+menu = [
+  { name = "about me", url = "about-me/" },
+  { name = "imprint", url = "imprint/" },
+  { name = "posts", url = "posts/" },
+]
 
-#buildDrafts  = false
-#buildFuture  = false
-#buildExpired = false
-#canonifyURLs = true
-
-enableRobotsTXT = true
-enableGitInfo   = true
-enableEmoji     = true
-#enableMissingTranslationPlaceholders = false
-disableRSS     = false
-disableSitemap = false
-disable404     = false
-disableHugoGeneratorInject = false
-
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
-
-[permalinks]
-  posts = "/posts/:year/:month/:title/"
-
-[blackfriday]
-  hrefTargetBlank = true
-
-[taxonomies]
-  tag      = "tags"
-  category = "categories"
-  series   = "series"
-
-[privacy]
-  [privacy.disqus]
-    disable = true
-  [privacy.googleAnalytics]
-    disable = true
-  [privacy.instagram]
-    disable = true
-  [privacy.x]
-    disable = true
-  [privacy.vimeo]
-    disable = true
-  [privacy.youtube]
-    disable = true
-
-[params.author]
-  name = "Ralf Heiringhoff"
-
-[params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
-
-  # Metadata mostly used in document's head
-  #
-  description = "Ralf Heiringhoff's Homepage"
-  keywords = "frosty-geek, Ralf Heiringhoff, homepage, blog"
-  images = [""]
-
-  # Home subtitle of the index page.
-  #
-  homeSubtitle = "open source enthusiast | technology geek | gamer | dad of 3 ♡"
-
-  # Set a background for the homepage
-  #backgroundImage = "background.jpg"
-
-  # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  #
-  gitUrl = "https://github.com/frosty-geek/frosty-geek.net/commits/"
-
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  #
-  disableReadOtherPosts = false
-
-  # Enable theme toggle
-  #
-  # This options enables the theme toggle for the theme.
-  # Per default, this option is off.
-  # The theme is respecting the prefers-color-scheme of the operating systeme.
-  # With this option on, the page user is able to set the scheme he wants.
-  enableThemeToggle = true
-
-  # Sharing buttons
-  #
-  # There are a lot of buttons preconfigured. If you want to change them,
-  # generate the buttons here: https://sharingbuttons.io
-  # and add them into your own `layouts/partials/sharing-buttons.html`
-  #
-  enableSharingButtons = false
-
-  # Global language menu
-  #
-  # Enables the global language menu.
-  #
-  enableGlobalLanguageMenu = false
-
-  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
-  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
-  #
-  #customCSS = []
-  #customJS  = []
-
-  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
-  #
-  justifyContent = true  # Set "text-align: justify" to .post-content.
-
-  # Custom footer 
-  # If you want, you can easily override the default footer with your own content. 
-  #
-  [params.footer]
-    trademark = "2026"
-    author = true
-    topText = [
-      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-	  "<a href=\"https://github.com/rhazdon/hugo-theme-hello-friend-ng\">Theme</a>"
-    ]
-#    bottomText = [
-#      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
-#      "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
-#    ]
-
-  # Colors for favicons
-  #
-  [params.favicon.color]
-    mask = "#1b1c1d"
-    msapplication = "#1b1c1d"
-    theme = "#1b1c1d"
-
-  [params.logo]
-    logoMark     = "$"
-    logoText     = "cd ~"
-    logoHomeLink = "/"
-    # Set true to remove the logo cursor entirely.
-    # logoCursorDisabled = false
-    # Set to a valid CSS color to change the cursor in the logo.
-    logoCursorColor    = "#67a2c9"
-    # Set to a valid CSS time value to change the animation duration, "0s" to disable.
-    # logoCursorAnimate  = "2s"
-
-  # Commento is more than just a comments widget you can embed — 
-  # it’s a return to the roots of the internet. 
-  # An internet without the tracking and invasions of privacy. 
-  # An internet that is simple and lightweight. 
-  # An internet that is focused on interesting discussions, not ads. 
-  # A better internet.
-  # Uncomment this to enable Commento.
-  #
-  # [params.commento]
-  #   url = ""
-
-  # Uncomment this if you want a portrait on your start page
-  #
-  [params.portrait]
-    path     = "/images/frosty-geek.webp"
-    alt      = "Portrait"
-    maxWidth = "256px"
-
-  # Social icons
-  [[params.social]]
-    name = "email"
-    url  = "mailto:ralf@frosty-geek.net"
-
-  [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/in/ralf-heiringhoff"
-
-  [[params.social]]
-    name = "case"
-    url  = "https://sap.com"
-
-  [[params.social]]
-    name = "github"
-    url  = "https://github.com/frosty-geek"
-
-  [[params.social]]
-    name = "gitlab"
-    url  = "https://gitlab.com/frosty-geek"
-
-  [[params.social]]
-    name = "matrix"
-    url  = "https://matrix.to/#/@frosty-geek:matrix.org"
-
-  [[params.social]]
-    name = "signal"
-    url  = "https://signal.me/#p/+491791111437"
-
-
-[menu]
-  [[menu.main]]
-    identifier = "about-me"
-    name       = "about me"
-    url        = "about-me/"
-  [[menu.main]]
-    identifier = "imprint"
-    name       = "imprint"
-    url        = "imprint/"
-  [[menu.main]]
-    identifier = "posts"
-    name       = "posts"
-    url        = "posts/"
+social = [
+  { name = "email", title = "Email", url = "mailto:ralf@frosty-geek.net" },
+  { name = "linkedin", title = "Linkedin", url = "https://www.linkedin.com/in/ralf-heiringhoff" },
+  { name = "case", title = "Case", url = "https://sap.com" },
+  { name = "github", title = "Github", url = "https://github.com/frosty-geek" },
+  { name = "gitlab", title = "Gitlab", url = "https://gitlab.com/frosty-geek" },
+  { name = "matrix", title = "Matrix", url = "https://matrix.to/#/@frosty-geek:matrix.org" },
+  { name = "signal", title = "Signal", url = "https://signal.me/#p/+491791111437" },
+]
